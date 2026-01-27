@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="indice.js"></script>
+    <title>Project: Rock Paper Scissors</title>
+</head>
+
+<body>
+    <div class="imagem">
+        <img src="./imagem/rockPaper.jpg" width="1500" height="200">
+    </div>
+    
+ 
+    <div class="humanChoice">
+        <form action="gamer" method="get">
+            <label for="choice">Make your choice: </label>
+            <input type="text">
+
+            <button type="submit">Play</button>
+            
+
+        </form>
+    </div>
+    <div class="computerChoice">
+
+    </div>
+    <div class="points">
+
+    
+    </div>
+    <script>
+        document.querySelector('input[type="text"]').addEventListener('input', () => {
+            document.body.classList.add('chaos');
+        });
+    </script>
+</body>
+
+</html>
