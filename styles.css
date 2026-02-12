@@ -1,80 +1,67 @@
-body{
+body {
     background-color: rgb(27, 27, 27);
+    color: white;
 }
-h1{
+
+h1 {
     text-align: center;
     color: blueviolet;
     margin: 30px 0;
 }
-.humanChoice{
-    color: rgb(132, 20, 102);
-    font-size: larger;
-    font-weight: 900;
-    padding: 50px 0;
-    form{
+
+
+
+#humanChoice {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    }
-    button{
-        background-color: rgb(110, 176, 237);
+    gap: 30px;
+    padding: 80px;
+
+
+
+
+    button {
+        background: linear-gradient(#e52a1d, #3d82f3);
         border-radius: 5px;
         padding: 3px 10px;
 
+
     }
 }
 
-.imagem{
+.imagem {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-body.chaos *,
-body.chaos *::before,
-body.chaos *::after {
-  position: relative !important;
-  animation: chaosMove 2s infinite alternate ease-in-out,
-             chaosRotate 3s infinite linear,
-             chaosColor 5s infinite alternate;
-  will-change: transform, filter;
+.computerChoice,
+.points,
+h3 {
+    font-weight: 900;
+    text-align: center;
+    font-size: x-large;
+
+    background: linear-gradient(270deg, #bd1d17, #ee0979, #6a11cb);
+    background-size: 600% 600%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 5s ease infinite;
+
 }
 
-/* Random movement */
-@keyframes chaosMove {
-  0% {
-    transform: translate(0, 0) scale(1);
-  }
-  25% {
-    transform: translate(20px, -30px) scale(1.05);
-  }
-  50% {
-    transform: translate(-40px, 10px) scale(0.95);
-  }
-  75% {
-    transform: translate(30px, 40px) scale(1.1);
-  }
-  100% {
-    transform: translate(-20px, -10px) scale(1);
-  }
-}
+#playAgain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    #jogar-novamente{
+        background: linear-gradient(#ec4438, #3a86ff);
+        border-radius: 5px;
+        padding: 3px 10px;
+        margin: 30px;
+    }
+    
 
-/* Rotation chaos */
-@keyframes chaosRotate {
-  0%   { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-/* Color + blur insanity */
-@keyframes chaosColor {
-  0% {
-    filter: hue-rotate(0deg) blur(0px);
-  }
-  50% {
-    filter: hue-rotate(180deg) blur(1px);
-  }
-  100% {
-    filter: hue-rotate(360deg) blur(0px);
-  }
 }

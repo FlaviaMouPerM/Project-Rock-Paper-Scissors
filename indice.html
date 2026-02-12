@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src="indice.js"></script>
     <title>Project: Rock Paper Scissors</title>
 </head>
 
@@ -13,30 +12,28 @@
     <div class="imagem">
         <img src="./imagem/rockPaper.jpg" width="1500" height="200">
     </div>
-    
- 
-    <div class="humanChoice">
-        <form action="gamer" method="get">
-            <label for="choice">Make your choice: </label>
-            <input type="text">
 
-            <button type="submit">Play</button>
-            
 
-        </form>
+    <div id="humanChoice">
+        <h3>What's your choice?</h3>
+        <button id="ROCK">ROCK</button>
+        <button id="PAPER">PAPER</button>
+        <button id="SCISSORS">SCISSORS</button>
+
     </div>
+
     <div class="computerChoice">
 
     </div>
     <div class="points">
 
-    
+
     </div>
-    <script>
-        document.querySelector('input[type="text"]').addEventListener('input', () => {
-            document.body.classList.add('chaos');
-        });
-    </script>
+    <div id="playAgain">
+        <button hidden id="jogar-novamente">Jogar novamente</button>
+    </div>
+
+    <script src="indice.js"></script>
 </body>
 
 </html>
